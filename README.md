@@ -21,9 +21,9 @@ Objectives:
 - Display progress using total, active, and completed counters.
 - Provide task filters, inline editing, loading states, and error feedback.
 
-## Screenshot and source analysis
+## Analysis
 
-The supplied screenshot shows Todo Workspace at `localhost:5173`, a green backend indicator, three zero-valued counters, a task input, filter tabs, an empty task panel, and the API reference card.
+Todo Workspace at `localhost:5173`, a green backend indicator, three zero-valued counters, a task input, filter tabs, an empty task panel, and the API reference card.
 
 | Element | Implementation and interpretation |
 | --- | --- |
@@ -34,8 +34,6 @@ The supplied screenshot shows Todo Workspace at `localhost:5173`, a green backen
 | Empty panel | Appears when the selected view has no tasks. |
 | API reference | Describes the four task operations in the backend. |
 | Dark appearance | CSS follows the system/browser color-scheme preference. |
-
-The screenshot establishes the visible empty state when captured. Source inspection confirms edit, completion, delete, and clear-completed handlers; the screenshot alone does not establish successful CRUD interactions.
 
 ## Implemented features
 
