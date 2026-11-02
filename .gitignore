@@ -1,0 +1,41 @@
+# Dependencies and generated output
+node_modules/
+dist/
+dist-ssr/
+coverage/
+
+# Environment files and machine-specific overrides
+.env
+.env.*
+*.env
+*.local
+
+# Credentials and private keys
+.npmrc
+.pypirc
+.netrc
+_netrc
+.aws/
+.ssh/
+credentials.json
+credentials.*.json
+service-account*.json
+serviceAccount*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+
+# Local logs, tools, and editor files
+*.log
+logs/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.agents/
+.codex/
