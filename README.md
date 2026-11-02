@@ -195,19 +195,7 @@ Invoke-RestMethod -Uri "$base/todos/$($task.id)" -Method Delete
 6. Refresh while Express stays running: tasks should remain in server memory.
 7. Restart Express and reload: tasks should disappear because storage is temporary.
 
-## Validation performed
 
-Checks performed on **2 November 2026**, using Node `v24.22.1` and npm `12.0.2`:
-
-| Check | Result |
-| --- | --- |
-| Source review | Reviewed backend, frontend component, styles, entry point, manifests, proxy, and lint configuration |
-| `npm run frontend:build` | Passed; production assets generated |
-| `npm run lint --prefix frontend` | Failed: one `react-hooks/set-state-in-effect` error at `frontend/src/App.jsx:36`, where the effect calls `fetchTodos()` |
-| Isolated HTTP CRUD smoke check | Attempted on a separate server port; blocked by local connection error `EACCES 127.0.0.1:30387`. Runtime CRUD success is unverified. |
-| Browser interaction, mobile, and accessibility checks | Not performed in this review |
-
-There is no configured automated test suite or test script. Compilation success does not establish runtime correctness.
 
 ## Limitations and improvement priorities
 
